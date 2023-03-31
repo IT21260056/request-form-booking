@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RequestFormBookingApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(RequestFormBookingApplication.class, args);
+		System.out.println("Viduth");
 	}
 
 }
