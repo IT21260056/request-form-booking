@@ -94,11 +94,4 @@ public class User {
         this.noOfRooms = noOfRooms;
     }
 
-
-
-
-
-
-
-
 }
