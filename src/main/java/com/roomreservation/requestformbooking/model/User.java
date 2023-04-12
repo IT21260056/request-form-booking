@@ -20,7 +20,6 @@ public class User {
     private int noOfRooms;
 
 
-
 //    public boolean isAc() {
 //        return ac;
 //    }
