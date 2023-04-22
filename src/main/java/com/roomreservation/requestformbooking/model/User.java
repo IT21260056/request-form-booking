@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 public class User {
@@ -18,15 +19,6 @@ public class User {
     private String type;
     private int noOfPerson;
     private int noOfRooms;
-
-
-//    public boolean isAc() {
-//        return ac;
-//    }
-//
-//    public void setAc(boolean ac) {
-//        this.ac = ac;
-//    }
 
 
     public String getName() {
