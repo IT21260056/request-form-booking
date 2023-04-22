@@ -14,6 +14,8 @@ public class HallBooking {
     private Long id;
     private String name;
     private LocalDateTime dateTime;
+    private String type;
+    private int participants;
 
     public Long getId() {
         return id;
@@ -55,6 +57,5 @@ public class HallBooking {
         this.participants = participants;
     }
 
-    private String type;
-    private int participants;
+
 }
