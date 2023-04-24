@@ -4,7 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 @Entity
@@ -13,8 +14,26 @@ public class HallBooking {
     @GeneratedValue
     private Long id;
     private String name;
-    private LocalDateTime dateTime;
+    private LocalDate date;
+    private LocalTime time;
     private String type;
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalTime time) {
+        this.time = time;
+    }
+
     private int participants;
 
     public Long getId() {
@@ -31,14 +50,6 @@ public class HallBooking {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public LocalDateTime getDateTime() {
-        return dateTime;
-    }
-
-    public void setDateTime(LocalDateTime dateTime) {
-        this.dateTime = dateTime;
     }
 
     public String getType() {
