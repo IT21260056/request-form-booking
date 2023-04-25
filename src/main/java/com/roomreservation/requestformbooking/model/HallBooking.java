@@ -17,6 +17,16 @@ public class HallBooking {
     private LocalDate date;
     private LocalTime time;
     private String type;
+    private double price;
+
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
     public LocalDate getDate() {
         return date;
