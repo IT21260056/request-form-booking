@@ -7,6 +7,8 @@ import com.roomreservation.requestformbooking.repository.PriceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin("http://localhost:3000")
 public class PriceController {
@@ -22,6 +24,12 @@ public class PriceController {
     RoomPrice getuserById(@PathVariable Long id){
         return priceRepository.findById(id)
                 .orElseThrow(()->new UserNotFoundException(id));
+    }
+
+    @GetMapping("/prices")
+    List<RoomPrice> getAllPrices(){
+
+        return priceRepository.findAll();
     }
 
     @PutMapping("/price/{id}")
